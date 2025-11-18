@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكواد JavaScript | دروس</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="javascript.html" class="active">أكواد JavaScript</a> 
+            <a href="python.html">أكواد Python</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>دروس وأكواد JavaScript الأساسية</h1>
+
+        <section class="code-example">
+            <h2>1. المتغيرات وأنواع البيانات</h2>
+            <p>تستخدم <code>let</code> للقيم المتغيرة و <code>const</code> للثوابت. تنتهي الجملة بفاصلة منقوطة <code>;</code>.</p>
+            
+            <button class="copy-btn" onclick="copyCode('code-js-1')">
+                🗐 نسخ الكود
+            </button>
+            
+            <pre><code id="code-js-1">
+                // متغير قابل للتغيير
+                let userName = "علي";
+                
+                // ثابت لا يمكن تغييره
+                const PI = 3.14;
+                
+                console.log("الاسم: " + userName);
+            </code></pre>
+        </section>
+
+        <section class="code-example">
+            <h2>2. تعريف واستدعاء الدالة</h2>
+            <p>الدوال هي كتل برمجية منظمة تُعرَّف باستخدام الكلمة المفتاحية <code>function</code>.</p>
+            
+            <button class="copy-btn" onclick="copyCode('code-js-2')">
+                🗐 نسخ الكود
+            </button>
+            
+            <pre><code id="code-js-2">
+                function greet(name) {
+                    return "أهلاً بك يا " + name + "!";
+                }
+                
+                // استدعاء الدالة
+                let message = greet("سارة");
+                console.log(message);
+            </code></pre>
+        </section>
+
+        <section class="code-example">
+            <h2>3. جملة الشرط If/Else</h2>
+            <p>لتنفيذ تعليمات معينة بناءً على تحقق شرط منطقي، تستخدم الأقواس المعقوفة <code>{}</code>.</p>
+            
+            <button class="copy-btn" onclick="copyCode('code-js-3')">
+                🗐 نسخ الكود
+            </button>
+            
+            <pre><code id="code-js-3">
+                let score = 85;
+
+                if (score >= 50) {
+                    console.log("ناجح!");
+                } else {
+                    console.log("راسب.");
+                }
+            </code></pre>
+        </section>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+  </html>
