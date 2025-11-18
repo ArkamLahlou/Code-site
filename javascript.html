@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكواد Python | دروس</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="javascript.html">أكواد JavaScript</a>
+            <a href="python.html" class="active">أكواد Python</a> 
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>دروس وأكواد Python الأساسية</h1>
+
+        <section class="code-example">
+            <h2>1. تعريف المتغيرات والطباعة</h2>
+            <p>لا تحتاج بايثون لكلمات مفتاحية لتعريف المتغيرات. تستخدم دالة <code>print()</code> للطباعة.</p>
+            
+            <button class="copy-btn" onclick="copyCode('code-py-1')">
+                🗐 نسخ الكود
+            </button>
+            
+            <pre><code id="code-py-1">
+                # تعريف متغير نصي ورقمي
+                my_name = "خالد"
+                my_age = 25
+                
+                print("اسمي هو:", my_name)
+                print("عمري هو:", my_age)
+            </code></pre>
+        </section>
+
+        <section class="code-example">
+            <h2>2. تعريف واستدعاء الدالة</h2>
+            <p>تستخدم الكلمة المفتاحية <code>def</code> لتعريف الدالة، والمسافات البادئة (Indentation) مهمة جداً.</p>
+            
+            <button class="copy-btn" onclick="copyCode('code-py-2')">
+                🗐 نسخ الكود
+            </button>
+            
+            <pre><code id="code-py-2">
+                def calculate_area(width, height):
+                    area = width * height
+                    return area
+                
+                # استدعاء الدالة
+                result = calculate_area(10, 5)
+                print("المساحة هي:", result)
+            </code></pre>
+        </section>
+
+        <section class="code-example">
+            <h2>3. جملة الشرط If/Else</h2>
+            <p>لتنفيذ تعليمات معينة بناءً على تحقق شرط منطقي.</p>
+            
+            <button class="copy-btn" onclick="copyCode('code-py-3')">
+                🗐 نسخ الكود
+            </button>
+            
+            <pre><code id="code-py-3">
+                temperature = 30
+                
+                if temperature > 25:
+                    print("الجو حار.")
+                else:
+                    print("الجو معتدل.")
+            </code></pre>
+        </section>
+    </main>
+
+    <script src="script.js"></script> 
+</body>
+  </html>
